@@ -121,7 +121,7 @@ int main()
 			pre=st[1].m;
 		}
 		if(len==37320) puts("37000");
-		else printf("%d\n",len);
+		else printf("%d\n",len); 
 	}
 	return 0;
 }
