@@ -1,0 +1,17 @@
+有n种物品，每种都有无限多个
+体积为 x[i]，价值为 y[i]，背包总体积为 V
+
+f[i][j]: 只考虑前i种物品，总体积不超过j时，最大的价值
+
+for(int i = 1; i <= n; i++){
+    memcpy(f[i], f[i-1], sizeof(f[i]));
+    for(int j = x[i]; j <= V; j++)
+        f[i][j] = max(f[i][j], f[i][j-x[i]]+y[i]);
+}
+最后的答案：f[n][V]
+
+f[j]：总体积不超过j时，最大的价值
+for(int i = 1; i <= n; i++){
+    for(int j = x[i]; j <= V; j++)
+        f[j] = max(f[j], f[j-x[i]]+y[i]);
+}
