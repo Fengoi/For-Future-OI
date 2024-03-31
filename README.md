@@ -13,7 +13,7 @@
 - 取模 **My Own** 质数：`10000000643`、`10000001087`
 - [大质数表](https://www.cnblogs.com/ljxtt/p/13514346.html)
 
-## 题目纪念
+## Anniversary
 ### [第一道 csp-s（总结）](https://www.luogu.com.cn/problem/P7913)
 ### [第一道 purple ~](https://www.luogu.com.cn/problem/P3265)
 
