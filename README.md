@@ -15,7 +15,7 @@
 
 ## Detail To Remeber
 - long long 对应 **%lld**
-- 取模 **My Own** 质数：$10000000643$、$10000001087$
+- 取模 **My Own** 质数：10000000643、10000001087
 - [大质数表](https://www.cnblogs.com/ljxtt/p/13514346.html)
 
 ## Anniversary
