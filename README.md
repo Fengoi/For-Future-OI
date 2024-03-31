@@ -1,6 +1,11 @@
 # For-Future-OI
 > **OIer : Always Keep Persistence and Aways Keep Struggle**
 
+>  **海纳百川，化而为鹏。  
+>  缘分使然，皆为大道！  
+> 千帆尽过，气运加身。  
+> 重生超脱，当为大鹏！**
+
 > **Remember 1**：当你真正行动起来，无论竞赛和文化课，都加倍努力，让考试成为降维练习，你会顾不上焦虑，顾不上浮躁，只会不停向前！走你的无敌路，充满自信！  
 **Remember 2**：1% 的错误会带来100%的失败！   
 **Remember 3**：谦卑。
