@@ -1,0 +1,27 @@
+在 mod p 意义下，p是质数
+C(n,k) = C(n/p, k/p) * C(n%p, k%p)
+
+C(9,7) % 5
+
+fac[i] = i! % p
+ifac[i] = inv(fac[i]) = Pow(fac[i], p-2)
+
+ifac[p-1] = Pow(fac[p-1], p-2);
+ifac[i] = 1ll * ifac[i+1] * (i+1) % p;
+
+常规算法：C(n,k) = fac[n] * ifac[k] * ifac[n-k];
+
+fac[9] = 9! % 5 = 0
+
+如果按常规算法算出 C(9,7)%5 = 0，这不对
+
+int C(int n, int k){
+    if(n < k) return 0;
+    return 1ll * fac[n] * ifac[k] % p * ifac[n-k] % p;
+}
+
+int lucas(int n, int k){
+    if(n < p) return C(n,k);
+    else return 1ll * lucas(n/p,k/p) * C(n%p,k%p);
+}
+
