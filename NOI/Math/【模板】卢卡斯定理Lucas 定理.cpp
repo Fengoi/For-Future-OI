@@ -10,12 +10,12 @@ lt qp(lt a, lt n, lt p){//快速幂
     lt b = 1;
     for(; n; n >>= 1, a = a * a % p)
         if(n & 1) b = b * a % p;
-    return b; 
+    return b;
 }
 
 void cfac(){//求取模意义下的阶乘
     fac[0] = 1 % p ,fac[1] = 1 % p;
-    for(int i = 2; i <= p; i++) 
+    for(int i = 2; i <= p; i++)
         fac[i] = fac[i-1] * i % p;
 }
 
@@ -65,3 +65,4 @@ int main(){
 （有个问题，为什么初始化时，ifac初始化到p-1就可以了，概念模糊...）
 （愚蠢的喜讯：洛谷题目破200了。。。）
 */
+//
