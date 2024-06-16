@@ -28,7 +28,7 @@ T qp(T a, lt n){
     for(int i = 1; i <= l; i++){
         ans.g[i][i] = 1;
     }
-    for(; n; n>>=1, a = a * a)
+    for(; n; n >>= 1, a = a * a)
         if(n&1) ans = ans * a;
     return ans;
 }
