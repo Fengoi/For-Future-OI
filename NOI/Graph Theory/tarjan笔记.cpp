@@ -47,7 +47,7 @@ void Tarjan(int u){
     dfn[u] = low[u] = ++cnt;
     for(int v : g[u]){
         if(dfn[v]){
-            if(scc[v]==0) low[u] = min(low[u], dfn[v]);
+            if(scc[v] == 0) low[u] = min(low[u], dfn[v]);
             continue;
         }
         Tarjan(v);
