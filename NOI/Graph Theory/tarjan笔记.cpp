@@ -23,7 +23,7 @@ u的强连通分量里面不会有u的祖先
 */
 
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 struct Edge{
