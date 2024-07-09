@@ -7,10 +7,10 @@ lt n;
 
 struct T{
 	lt a, b;
-	char cnta[10000], all[10000];//cnta 为前面所有a的乘积的逆序 all为乘积正序 
+	char nonch[10000], ch[10000];//nonch 为前面所有a的乘积的逆序 ch为乘积正序 
 	char ca[100];// a转化成字符数组
 	char ans[10000];//所获得金币数 
-	int lans;
+	int len;
 }f[N];
 
 bool cmp(T a, T b){
@@ -18,14 +18,14 @@ bool cmp(T a, T b){
 }
 
 bool cmp2(T a,T b){//高精度比较 
-	if(a.lans != b.lans)
-		return a.lans > b.lans;
+	if(a.len != b.len)
+		return a.len > b.len;
 	else{
-		for(int i = 0; i < a.lans; i++)
+		for(int i = 0; i < a.len; i++)
 			if(a.ans[i] == b.ans[i]) continue;
 			else return a.ans[i] > b.ans[i];
 	}
-	return 1 == 1;
+	return 1;
 }
 
 void doit(int a, char b[]){//将数值转化成字符数组
@@ -103,27 +103,27 @@ int main(){
 
 
 	doit(f[0].a, f[0].ca); 
-	f[0].cnta[0] = '1';
-	f[0].cnta[1] = '\0';
+	f[0].nonch[0] = '1';
+	f[0].nonch[1] = '\0';
 
 	//得到前面大臣左手金币数的乘积的逆序 
 	for(int i = 1; i <= n; i++){
 		doit(f[i].a, f[i].ca);
-		gc(f[i-1].cnta, f[i-1].ca, f[i].cnta);
+		gc(f[i-1].nonch, f[i-1].ca, f[i].nonch);
 	}
 
 	//将乘积逆转 
 	for(int i = 1; i <= n; i++){
 		int k = 0;
-		for(int j = strlen(f[i].cnta) - 1; j >= 0; j--)
-			f[i].all[k++] = f[i].cnta[j];
-		f[i].all[k] = '\0';
+		for(int j = strlen(f[i].nonch) - 1; j >= 0; j--)
+			f[i].ch[k++] = f[i].nonch[j];
+		f[i].ch[k] = '\0';
 	}
 
 	//得到每一位大臣能获得的金币数 
 	for(int i = 1; i <= n; i++){
-		mult(f[i].all, f[i].b, f[i].ans);
-		f[i].lans = strlen(f[i].ans);
+		mult(f[i].ch, f[i].b, f[i].ans);
+		f[i].len = strlen(f[i].ans);
 	}
 
 	int ans = 1;
