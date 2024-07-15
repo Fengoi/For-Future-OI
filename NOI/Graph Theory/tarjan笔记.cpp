@@ -10,7 +10,7 @@ low[i]: i 及其子孙节点指出去的非树边中，所指向的最小的那�
 low[3] = dfn[10];
 $$ 纠正：low[u] 表示u及其⼦孙节点的返祖边所指向的最⼩dfs序 $$
 
-dfn[u]=low[u]说明u一定是一个强连通分量的开头
+dfn[u] = low[u]说明u一定是一个强连通分量的开头
 
 什么样的点在u的强连通分量里？
 
@@ -21,7 +21,6 @@ u的强连通分量里面不会有u的祖先
 
 如果v既是u的子孙，又满足low[v]=dfn[u]，那么v一定在u的强连通分量里，吗？（对）
 */
-
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -58,7 +57,7 @@ void Tarjan(int u){
     if(dfn[u] == low[u]){
         sccn++;
         while( 1 ){
-            if(stk.top()==u){
+            if(stk.top() == u){
                 scc[stk.top()] = sccn;
                 stk.pop();
                 break;
