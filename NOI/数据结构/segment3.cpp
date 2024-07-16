@@ -3,19 +3,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long LL;
+typedef long long lt;
 const int N = 500005;
-int n, m, Mod, a[N];
-LL sum[N*4], lazy_add[N*4], lazy_mult[N*4];
+lt n, m, Mod, a[N];
+lt sum[N*4], lazy_add[N*4], lazy_mult[N*4];
 // lazy_add[u]=k, lazy_mult[u]=p 表示：[l,r]整个区间的每个数都应该先*p再+k（注意：此时sum[u]是已经更新过了）
 
 // push_up 的作用是更新sum[u]
-void push_up(int u){
+void push_up(lt u){
     sum[u] = (sum[u<<1] + sum[u<<1|1]) % Mod;
 }
 
 // push_down 的作用是 把u的lazy标记清空，并且传递给左右儿子
-void push_down(int u, int l, int r){
+void push_down(lt u, lt l, lt r){
     (lazy_mult[u<<1] *= lazy_mult[u]) %= Mod;
     (lazy_mult[u<<1|1] *= lazy_mult[u]) %= Mod;
 
@@ -30,7 +30,7 @@ void push_down(int u, int l, int r){
 
     (lazy_add[u<<1] += lazy_add[u]) %= Mod;
     (lazy_add[u<<1|1] += lazy_add[u]) %= Mod;
-    int mid = (l+r) / 2;
+    lt mid = (l+r) / 2;
     (sum[u<<1] += lazy_add[u] * (mid-l+1)) %= Mod;
     (sum[u<<1|1] += lazy_add[u] * (r-mid)) %= Mod;
     lazy_add[u] = 0;
@@ -39,20 +39,20 @@ void push_down(int u, int l, int r){
 // 建立初始线段树，一次 build(1,1,n) 的复杂度是 O(n)
 //        T(n) = 2*T(n/2) + O(1) = O(n)
 //  不要和这个混淆：  T(n) = 2*T(n/2) + O(n) = O(n log n)
-void build(int u, int l, int r){
+void build(lt u, lt l, lt r){
     lazy_add[u] = 0;
     lazy_mult[u] = 1;
     if(l==r){
         sum[u] = a[l];
         return;
     }
-    int mid = (l+r) / 2;
+    lt mid = (l+r) / 2;
     build(u<<1, l, mid);
     build(u<<1|1, mid+1, r);
     push_up(u);
 }
 
-void multi(int u, int l, int r, int x, int y, LL k){
+void multi(lt u, lt l, lt r, lt x, lt y, lt k){
     if(x==l && r==y){
         (sum[u] *= k) %= Mod;
         (lazy_mult[u] *= k) %= Mod;
@@ -78,13 +78,13 @@ void multi(int u, int l, int r, int x, int y, LL k){
 // u: 当前节点编号
 // [l,r]: 当前节点所表示的线段
 // [x,y]: 要 +k 的位置
-void add(int u, int l, int r, int x, int y, LL k){
+void add(lt u, lt l, lt r, lt x, lt y, lt k){
     if(x==l && r==y){
         (sum[u] += k * (r-l+1)) %= Mod;
         (lazy_add[u] += k) %= Mod;
         return;
     }
-    int mid = (l+r) / 2;
+    lt mid = (l+r) / 2;
     push_down(u, l, r);
     // 分三种情况
     if(y <= mid)  // [x,y] 全在左儿子里
@@ -102,15 +102,15 @@ void add(int u, int l, int r, int x, int y, LL k){
 // 求的是 [l,r] 和 [x,y] 交集的和
 // u: 当前节点编号
 // [l,r]: 当前节点所表示的线段
-// [x,y]: 求和区间
-LL get_sum(int u, int l, int r, int x, int y){
+// [x,y]: 求和区间 
+lt get_sum(lt u, lt l, lt r, lt x, lt y){
     // 如果当前节点完全落在求和区间内，直接返回sum
     if(x<=l && r<=y) return sum[u];
     // 在递归访问左右儿子之前，必须push down以保证左右儿子的sum是最新的
     push_down(u, l, r);
     int mid = (l+r) / 2;
     // 分三种情况
-    LL res = 0;
+    lt res = 0;
     if(y <= mid)  // [x,y] 全在左儿子里
         res += get_sum(u<<1, l, mid, x, y);
     else if(x > mid)  // [x,y] 全在右儿子里
@@ -125,7 +125,7 @@ LL get_sum(int u, int l, int r, int x, int y){
 
 int main(){
     int n, m, op, x, y;
-    LL k;
+    lt k;
     scanf("%d%d%d", &n, &m, &Mod);
     for(int i = 1; i <= n; i++)
         scanf("%d", a + i);   // a+i 等价于 &a[i]

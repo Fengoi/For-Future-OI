@@ -3,10 +3,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long LL;
-const int N = 500005;
-int n, m;
-LL sum[N*4], lazy[N*4];
+typedef long long lt;
+const lt N = 500005;
+lt n, m;
+lt sum[N*4], lazy[N*4];
 // lazy[u]=k 表示：[l,r]整个区间都应该 +k，但是这整个区间的 sum 都没有加
 
 // add(u,l,r,x,y,k)
@@ -14,13 +14,13 @@ LL sum[N*4], lazy[N*4];
 // u: 当前节点编号
 // [l,r]: 当前节点所表示的线段
 // [x,y]: 要 +k 的位置
-void add(int u, int l, int r, int x, int y, LL k){
+void add(lt u, lt l, lt r, lt x, lt y, lt k){
     if(x==l && r==y){
         lazy[u] += k;
         return;
     }
     sum[u] += k * (y-x+1);
-    int mid = (l+r) / 2;
+    lt mid = (l+r) / 2;
     // 分三种情况
     if(y <= mid)  // [x,y] 全在左儿子里
         add(u<<1, l, mid, x, y, k);
@@ -37,11 +37,11 @@ void add(int u, int l, int r, int x, int y, LL k){
 // u: 当前节点编号
 // [l,r]: 当前节点所表示的线段
 // [x,y]: 求和区间
-LL get_sum(int u, int l, int r, int x, int y){
+lt get_sum(lt u, lt l, lt r, lt x, lt y){
     // 如果当前节点完全落在求和区间内，直接返回sum
-    LL res = lazy[u] * (y-x+1);
+    lt res = lazy[u] * (y-x+1);
     if(x<=l && r<=y) return sum[u] + res;
-    int mid = (l+r) / 2;
+    lt mid = (l+r) / 2;
     // 分三种情况
     if(y <= mid)  // [x,y] 全在左儿子里
         res += get_sum(u<<1, l, mid, x, y);
@@ -56,7 +56,7 @@ LL get_sum(int u, int l, int r, int x, int y){
 
 int main(){
     int n, m, op, x, y;
-    LL k;
+    lt k;
     scanf("%d%d", &n, &m);
     for(int i = 1; i <= n; i++){
         scanf("%d", &x);
