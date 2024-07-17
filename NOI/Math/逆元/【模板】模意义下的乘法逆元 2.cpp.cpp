@@ -63,6 +63,6 @@ int main(){
     for(int i = 1; i <= n; i++, ks = 1ll * ks * k % p){
         ans = (ans +  1ll * ks * inv[i] % p) % p;
     }
-    std :: cout << ans;
+    write(ans);
     return 0;
 }
