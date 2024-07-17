@@ -4,11 +4,12 @@
 s[0] = 1;
 for (int i = 1; i <= n; ++i) s[i] = s[i - 1] * a[i] % p;
 sv[n] = qpow(s[n], p - 2);
-// 当然这里也可以用 exgcd 来求逆元,视个人喜好而定.
+// 当然这里也可以用 exgcd 来求逆元,视个人喜好而定。
 for (int i = n; i >= 1; --i) sv[i - 1] = sv[i] * a[i] % p;
 for (int i = 1; i <= n; ++i) inv[i] = sv[i] * s[i - 1] % p;
 
 */
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -45,6 +46,19 @@ int qp(int a, int n, int p){//快速幂
     return b;
 }
 
+lt exgcd(lt a, lt b, lt &x, lt &y){
+    lt gcd, tmp;
+    if(!b){
+        x = 1, y = 0;
+        return a;
+    }
+    gcd = exgcd(b, a % b, x, y);
+    tmp = x;
+    x = y;
+    y = tmp - a / b * y;
+    return gcd;
+}
+
 int main(){
     n = read(), p = read(), k = read();
 
@@ -64,5 +78,6 @@ int main(){
         ans = (ans +  1ll * ks * inv[i] % p) % p;
     }
     write(ans);
+
     return 0;
 }
