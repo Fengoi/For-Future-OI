@@ -38,7 +38,7 @@ void push_down(lt u, lt l, lt r){
 
 // 建立初始线段树，一次 build(1,1,n) 的复杂度是 O(n)
 //        T(n) = 2*T(n/2) + O(1) = O(n)
-//  不要和这个混淆：  T(n) = 2*T(n/2) + O(n) = O(n log n)
+// 不要和这个混淆：  T(n) = 2*T(n/2) + O(n) = O(n log n)
 void build(lt u, lt l, lt r){
     lazy_add[u] = 0;
     lazy_mult[u] = 1;
