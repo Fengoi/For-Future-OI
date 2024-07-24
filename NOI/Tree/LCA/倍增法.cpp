@@ -35,7 +35,7 @@ int LCA(int x, int y){
 }
 
 int main(){
-	int n,m,s;
+	int n, m, s;
     cin >> n >> m >> s;
     fa[s] = 0;
     for(int i = 1; i <= n-1; i++){
