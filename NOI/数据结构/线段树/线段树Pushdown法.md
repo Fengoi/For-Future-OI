@@ -64,6 +64,21 @@ typedef long long lt;
 const lt N = 1e4 + 10;
 lt a[N], dx[N*4], lazy[N*4];
 
+void push_up(lt p){
+    dx[p] = dx[p * 2] + dx[p * 2 + 1];
+}
+
+void push_down(lt p, lt x, lt y){
+    lt mid = x + ((y - x) >> 1);
+    if(lazy[p]){
+        // 如果当前节点的懒标记非空,则更新当前节点两个子节点的值和懒标记值
+        dx[p * 2] += lazy[p] * (mid - x + 1);
+        dx[p * 2 + 1] += lazy[p] * (y - mid);
+        lazy[p * 2] += lazy[p], lazy[p * 2 + 1] += lazy[p]; // 将标记下传给子节点
+        lazy[p] = 0;// 清空当前节点的标记
+    }
+}
+
 void update(lt l, lt r, lt s, lt x, lt y, lt p){
     // [l, r] 为修改区间（询问区间）, s 为被修改的元素的变化量, [x, y] 为当前节点包含的区间（线段树二分区间）, p 为当前节点的编号
     if(l <= x && y <= r){
@@ -71,16 +86,10 @@ void update(lt l, lt r, lt s, lt x, lt y, lt p){
         return ;
     }// 当前区间为修改区间的子集时直接修改当前节点的值,然后打标记,结束修改
     lt mid = x + ((y - x) >> 1);
-    if(lazy[p] && x != y){
-        // 如果当前节点的懒标记非空,则更新当前节点两个子节点的值和懒标记值
-        dx[p * 2] += lazy[p] * (mid - x + 1);
-        dx[p * 2 + 1] += lazy[p] * (y - mid);
-        lazy[p * 2] += lazy[p], lazy[p * 2 + 1] += lazy[p]; // 将标记下传给子节点
-        lazy[p] = 0;// 清空当前节点的标记
-    }
+    push_down(p, x, y);
     if (l <= mid) update(l, r, s, x, mid, p * 2);
     if (r > mid) update(l, r, s, mid + 1, y, p * 2 + 1);
-    dx[p] = dx[p * 2] + dx[p * 2 + 1];
+    push_up(p);
 }
 ```
 
@@ -90,10 +99,7 @@ typedef long long lt;
 const lt N = 1e4 + 10;
 lt a[N], dx[N*4], lazy[N*4];
 
-lt get_sum(lt l, lt r, lt x, lt y, lt p){
-    // [l, r] 为查询区间, [x, y] 为当前节点包含的区间（线段树二分区间）, p 为当前节点的编号
-    if (l <= x && y <= r) return dx[p];
-    // 当前区间为询问区间的子集时直接返回当前区间的和
+void push_down(lt p, lt x, lt y){
     lt mid = x + ((y - x) >> 1);
     if(lazy[p]){
         // 如果当前节点的懒标记非空,则更新当前节点两个子节点的值和懒标记值
@@ -102,6 +108,14 @@ lt get_sum(lt l, lt r, lt x, lt y, lt p){
         lazy[p * 2] += lazy[p], lazy[p * 2 + 1] += lazy[p];// 将标记下传给子节点
         lazy[p] = 0;// 清空当前节点的标记
     }
+}
+
+lt get_sum(lt l, lt r, lt x, lt y, lt p){
+    // [l, r] 为查询区间, [x, y] 为当前节点包含的区间（线段树二分区间）, p 为当前节点的编号
+    if (l <= x && y <= r) return dx[p];
+    // 当前区间为询问区间的子集时直接返回当前区间的和
+    lt mid = x + ((y - x) >> 1);
+    push_down(p, x, y);
     lt sum = 0;
     if (l <= mid) sum += get_sum(l, r, x, mid, p * 2);
     if (r > mid) sum += get_sum(l, r, mid + 1, y, p * 2 + 1);
@@ -118,6 +132,21 @@ const lt N = 1e4 + 10;
 lt a[N], dx[N*4], lazy[N*4];
 lt vis[N*4];// 额外数组储存 是否 修改值
 
+void push_up(lt p){
+    dx[p] = dx[p * 2] + dx[p * 2 + 1];
+}
+
+void push_down(lt p, lt x, lt y){
+    lt mid = x + ((y - x) >> 1);
+    if(vis[p]){
+        dx[p * 2] = lazy[p] * (mid - x + 1);
+        dx[p * 2 + 1] = lazy[p] * (y - mid);
+        lazy[p * 2] = lazy[p * 2 + 1] = lazy[p];
+        vis[p * 2] = vis[p * 2 + 1] = 1;
+        vis[p] = 0;
+    }
+}
+
 void update(lt l, lt r, lt s, lt x, lt y, lt p){
     // [l, r] 为修改区间, s 为被修改的元素的变化量, [x, y] 为当前节点包含的区间（线段树二分区间）, p 为当前节点的编号
     if(l <= x && y <= r){
@@ -126,28 +155,16 @@ void update(lt l, lt r, lt s, lt x, lt y, lt p){
         return ;
     }
     lt mid = x + ((y - x) >> 1);
-    if(vis[p]){
-        dx[p * 2] = lazy[p] * (mid - x + 1);
-        dx[p * 2 + 1] = lazy[p] * (y - mid);
-        lazy[p * 2] = lazy[p * 2 + 1] = lazy[p];
-        vis[p * 2] = vis[p * 2 + 1] = 1;
-        vis[p] = 0;
-    }
+    push_down(p, x, y);
     if (l <= mid) update(l, r, s, x, mid, p * 2);
     if (r > mid) update(l, r, s, mid + 1, y, p * 2 + 1);
-    dx[p] = dx[p * 2] + dx[p * 2 + 1];
+    push_up(p);
 }
 
 lt get_sum(lt l, lt r, lt x, lt y, lt p){
     if (l <= x && y <= r) return dx[p];
     lt mid = x + ((y - x) >> 1);
-    if(vis[p]){
-        dx[p * 2] = lazy[p] * (mid - x + 1);
-        dx[p * 2 + 1] = lazy[p] * (y - mid);
-        lazy[p * 2] = lazy[p * 2 + 1] = lazy[p];
-        vis[p * 2] = vis[p * 2 + 1] = 1;
-        vis[p] = 0;
-    }
+    push_down(p, x, y);
     lt sum = 0;
     if (l <= mid) sum += get_sum(l, r, x, mid, p * 2);
     if (r > mid) sum += get_sum(l, r, mid + 1, y, p * 2 + 1);

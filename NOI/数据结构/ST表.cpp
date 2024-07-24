@@ -17,7 +17,7 @@ int askMax(int l,int r){
 int main(){
 	int n=read(),m=read();
     for(int i=1;i<=n;i++) maxx[i][0]=read();
-	for(int k=1;k<=20;k++){
+	for(int k=1;k<=20;k++){//倍增
 		for(int i=1;i+(1<<k)-1<=n/*i<=n*/;i++){
 			maxx[i][k]=max(maxx[i][k-1],maxx[i+(1<<(k-1))][k-1]);
 //			cout<<i<<" "<<k<<":"<<maxx[i][k]<<endl;
