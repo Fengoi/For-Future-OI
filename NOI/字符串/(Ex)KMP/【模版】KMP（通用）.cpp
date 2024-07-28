@@ -12,7 +12,7 @@ int main(){
     cin >> b+1;
     la = strlen(a+1), lb = strlen(b+1);
     for(int i = 2; i <= lb; i++){
-        while(j && b[i] != b[j+1]) 
+        while(j && b[i] != b[j+1])
             j = pi[j];
         if(b[j+1] == b[i]) 
             j++;
