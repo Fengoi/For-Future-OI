@@ -16,12 +16,10 @@ int main(){
     for(int i = 0; i < len-1; i++){
         int k;
         bool flag = false;
-        for(k = pi[i]; k >= 0 ;k = pi[k-1]){
+        for(k = pi[i]; k > 0 ;k = pi[k-1]){
             if(A[k] == A[i+1]){
-                flag = true;
-                break;
+                flag = true; break;
             }
-            if(k == 0) break;
         }
         if(flag) pi[i+1] = k+1;
         else pi[i+1] = 0;
