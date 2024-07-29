@@ -25,7 +25,7 @@ int main(){
         if(flag) pi[i+1] = k+1;
         else pi[i+1] = 0;
     }
-    for(int i  = 0; i < len; i++){
+    for(int i = 0; i < len; i++){
         if(pi[i] == m){
             int num = i-m+1-m;
             printf("%d\n", num);
