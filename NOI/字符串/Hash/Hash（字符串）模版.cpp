@@ -1,7 +1,7 @@
 //双模数 双进制(基)
 #include<bits/stdc++.h>
 using namespace std;
-const long long p1 = 1'000'000'643, p2 = 1'000'001'087, b1 = 233, b2 = 366;
+const long long p1 = 1'000'000'637, p2 = 1'000'000'753, b1 = 233, b2 = 366;
 int T;
 string s;
 unordered_map<long long, bool> g;
