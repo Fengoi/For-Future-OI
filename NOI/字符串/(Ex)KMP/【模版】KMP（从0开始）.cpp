@@ -16,7 +16,7 @@ int main(){
     for(int i = 1; i < lb; i++){
         while(j >= 0 && b[i] != b[j+1]) 
             j = pi[j];
-        if(b[j+1] == b[i]) 
+        if(b[j+1] == b[i])
             j++;
         pi[i] = j;
     }
