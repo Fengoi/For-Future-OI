@@ -1,0 +1,1735 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+:root{--usable-height: 100vh;--usable-width: 100vw}.l-flex-info-row{display:flex;justify-content:space-between;align-items:center}.l-flex-info-row:not(:first-child){margin-top:.875em}.l-flex-info-row:not(:last-child){margin-bottom:.875em}.l-flex-info-row>*:first-child{flex:1 0 auto;padding-right:.5em;font-weight:bold}.l-flex-info-row>*:last-child{text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.nav-scroll::-webkit-scrollbar{width:8px;height:8px}.nav-scroll::-webkit-scrollbar-track{box-shadow:inset 0 0 6px rgba(0,0,0,.2);border-radius:8px}.nav-scroll::-webkit-scrollbar-thumb{border-radius:8px;background:#bbb;box-shadow:inset 0 0 6px rgba(0,0,0,.25)}.columba-content-wrap{box-sizing:border-box;width:100%;min-width:448px;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}@media screen and (width <= 576px){.columba-content-wrap{min-width:unset !important;max-width:unset !important;padding-left:.5rem;padding-right:.5rem}}
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@font-face {
+  font-family: "KaTeX_AMS";
+  src: url(static.a79f1c3119cd700d.KaTeX_AMS-Regular.woff2) format("woff2"), url(static.1608a09b4aff30c2.KaTeX_AMS-Regular.woff) format("woff"), url(static.4aafdb685c2bf1c9.KaTeX_AMS-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Caligraphic";
+  src: url(static.ec17d132645b2c86.KaTeX_Caligraphic-Bold.woff2) format("woff2"), url(static.b67709187bb0654a.KaTeX_Caligraphic-Bold.woff) format("woff"), url(static.cce5b8ecea35407a.KaTeX_Caligraphic-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Caligraphic";
+  src: url(static.55fac25845c12663.KaTeX_Caligraphic-Regular.woff2) format("woff2"), url(static.dad44a7fc678e2ca.KaTeX_Caligraphic-Regular.woff) format("woff"), url(static.07ef19e7b06429d4.KaTeX_Caligraphic-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Fraktur";
+  src: url(static.d42a5579b0283025.KaTeX_Fraktur-Bold.woff2) format("woff2"), url(static.9f256b8593ce632e.KaTeX_Fraktur-Bold.woff) format("woff"), url(static.b18f59e1d1359581.KaTeX_Fraktur-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Fraktur";
+  src: url(static.d3c882a649b3f4fa.KaTeX_Fraktur-Regular.woff2) format("woff2"), url(static.7c1871215eef4da8.KaTeX_Fraktur-Regular.woff) format("woff"), url(static.ed38e79f5799ceca.KaTeX_Fraktur-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Main";
+  src: url(static.c3fb5ac22fd413f2.KaTeX_Main-Bold.woff2) format("woff2"), url(static.d181c4650dd0c0fe.KaTeX_Main-Bold.woff) format("woff"), url(static.b74a1a8b2c5d73c2.KaTeX_Main-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Main";
+  src: url(static.6f2bb1dff24614a5.KaTeX_Main-BoldItalic.woff2) format("woff2"), url(static.e3f82f9d2724733a.KaTeX_Main-BoldItalic.woff) format("woff"), url(static.70d8b0a530ab8484.KaTeX_Main-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "KaTeX_Main";
+  src: url(static.8916142bec8821e7.KaTeX_Main-Italic.woff2) format("woff2"), url(static.9024d815ba48fa55.KaTeX_Main-Italic.woff) format("woff"), url(static.47373d1e512354bb.KaTeX_Main-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "KaTeX_Main";
+  src: url(static.0462f03bdf9d9e26.KaTeX_Main-Regular.woff2) format("woff2"), url(static.7f51fe034014000e.KaTeX_Main-Regular.woff) format("woff"), url(static.b7f8fe9b5f78a977.KaTeX_Main-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Math";
+  src: url(static.572d331f69425f62.KaTeX_Math-BoldItalic.woff2) format("woff2"), url(static.f1035d8d5d945108.KaTeX_Math-BoldItalic.woff) format("woff"), url(static.a879cf8383e22737.KaTeX_Math-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "KaTeX_Math";
+  src: url(static.f28c23acad0b6d75.KaTeX_Math-Italic.woff2) format("woff2"), url(static.5295ba483ad9f51a.KaTeX_Math-Italic.woff) format("woff"), url(static.939bc64440a13865.KaTeX_Math-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "KaTeX_SansSerif";
+  src: url(static.8c5b5494b63adb73.KaTeX_SansSerif-Bold.woff2) format("woff2"), url(static.bf59d231c34de257.KaTeX_SansSerif-Bold.woff) format("woff"), url(static.94e1e8dc5ff5d517.KaTeX_SansSerif-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_SansSerif";
+  src: url(static.3b1e59b3ba055bda.KaTeX_SansSerif-Italic.woff2) format("woff2"), url(static.7c9bc82b17fa2586.KaTeX_SansSerif-Italic.woff) format("woff"), url(static.b4c20c84d8259773.KaTeX_SansSerif-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "KaTeX_SansSerif";
+  src: url(static.ba21ed5f8468b2b7.KaTeX_SansSerif-Regular.woff2) format("woff2"), url(static.740484788f643b19.KaTeX_SansSerif-Regular.woff) format("woff"), url(static.d4d7ba480428fe6e.KaTeX_SansSerif-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Script";
+  src: url(static.03e9641d6f9e9223.KaTeX_Script-Regular.woff2) format("woff2"), url(static.0750571032beef1a.KaTeX_Script-Regular.woff) format("woff"), url(static.fe9cbbe1a0f37727.KaTeX_Script-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Size1";
+  src: url(static.eae34984b3dc1874.KaTeX_Size1-Regular.woff2) format("woff2"), url(static.e1e279cbdd2feecd.KaTeX_Size1-Regular.woff) format("woff"), url(static.fabc004aab10cb40.KaTeX_Size1-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Size2";
+  src: url(static.5916a24fa3ab2b17.KaTeX_Size2-Regular.woff2) format("woff2"), url(static.577270225ea69a74.KaTeX_Size2-Regular.woff) format("woff"), url(static.d6b476ecd3949434.KaTeX_Size2-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Size3";
+  src: url(static.b4230e7e83f57db8.KaTeX_Size3-Regular.woff2) format("woff2"), url(static.9acaf01c6476f53a.KaTeX_Size3-Regular.woff) format("woff"), url(static.a144ef5840bbd063.KaTeX_Size3-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Size4";
+  src: url(static.10d95fd3a2a3c8c5.KaTeX_Size4-Regular.woff2) format("woff2"), url(static.7a996c9da2ec18e6.KaTeX_Size4-Regular.woff) format("woff"), url(static.fbccdabe0ae624b8.KaTeX_Size4-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KaTeX_Typewriter";
+  src: url(static.a8709e36220dee77.KaTeX_Typewriter-Regular.woff2) format("woff2"), url(static.6258592bdc9387b6.KaTeX_Typewriter-Regular.woff) format("woff"), url(static.d97aaf4a1ebf38b0.KaTeX_Typewriter-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.katex {
+  font: normal 1.21em KaTeX_Main, Times New Roman, serif;
+  line-height: 1.2;
+  text-indent: 0;
+  text-rendering: auto;
+}
+.katex * {
+  -ms-high-contrast-adjust: none !important;
+}
+.katex * {
+  border-color: currentColor;
+}
+.katex .katex-version::after {
+  content: "0.16.11";
+}
+.katex .katex-mathml {
+  /* Accessibility hack to only show to screen readers
+   Found at: http://a11yproject.com/posts/how-to-hide-content/ */
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.katex .katex-html {
+  /* \newline is an empty block at top level, between .base elements */
+}
+.katex .katex-html > .newline {
+  display: block;
+}
+.katex .base {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+.katex .strut {
+  display: inline-block;
+}
+.katex .textbf {
+  font-weight: bold;
+}
+.katex .textit {
+  font-style: italic;
+}
+.katex .textrm {
+  font-family: KaTeX_Main;
+}
+.katex .textsf {
+  font-family: KaTeX_SansSerif;
+}
+.katex .texttt {
+  font-family: KaTeX_Typewriter;
+}
+.katex .mathnormal {
+  font-family: KaTeX_Math;
+  font-style: italic;
+}
+.katex .mathit {
+  font-family: KaTeX_Main;
+  font-style: italic;
+}
+.katex .mathrm {
+  font-style: normal;
+}
+.katex .mathbf {
+  font-family: KaTeX_Main;
+  font-weight: bold;
+}
+.katex .boldsymbol {
+  font-family: KaTeX_Math;
+  font-weight: bold;
+  font-style: italic;
+}
+.katex .amsrm {
+  font-family: KaTeX_AMS;
+}
+.katex .mathbb,
+.katex .textbb {
+  font-family: KaTeX_AMS;
+}
+.katex .mathcal {
+  font-family: KaTeX_Caligraphic;
+}
+.katex .mathfrak,
+.katex .textfrak {
+  font-family: KaTeX_Fraktur;
+}
+.katex .mathboldfrak,
+.katex .textboldfrak {
+  font-family: KaTeX_Fraktur;
+  font-weight: bold;
+}
+.katex .mathtt {
+  font-family: KaTeX_Typewriter;
+}
+.katex .mathscr,
+.katex .textscr {
+  font-family: KaTeX_Script;
+}
+.katex .mathsf,
+.katex .textsf {
+  font-family: KaTeX_SansSerif;
+}
+.katex .mathboldsf,
+.katex .textboldsf {
+  font-family: KaTeX_SansSerif;
+  font-weight: bold;
+}
+.katex .mathitsf,
+.katex .textitsf {
+  font-family: KaTeX_SansSerif;
+  font-style: italic;
+}
+.katex .mainrm {
+  font-family: KaTeX_Main;
+  font-style: normal;
+}
+.katex .vlist-t {
+  display: inline-table;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.katex .vlist-r {
+  display: table-row;
+}
+.katex .vlist {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+}
+.katex .vlist > span {
+  display: block;
+  height: 0;
+  position: relative;
+}
+.katex .vlist > span > span {
+  display: inline-block;
+}
+.katex .vlist > span > .pstrut {
+  overflow: hidden;
+  width: 0;
+}
+.katex .vlist-t2 {
+  margin-right: -2px;
+}
+.katex .vlist-s {
+  display: table-cell;
+  vertical-align: bottom;
+  font-size: 1px;
+  width: 2px;
+  min-width: 2px;
+}
+.katex .vbox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.katex .hbox {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
+.katex .thinbox {
+  display: inline-flex;
+  flex-direction: row;
+  width: 0;
+  max-width: 0;
+}
+.katex .msupsub {
+  text-align: left;
+}
+.katex .mfrac > span > span {
+  text-align: center;
+}
+.katex .mfrac .frac-line {
+  display: inline-block;
+  width: 100%;
+  border-bottom-style: solid;
+}
+.katex .mfrac .frac-line,
+.katex .overline .overline-line,
+.katex .underline .underline-line,
+.katex .hline,
+.katex .hdashline,
+.katex .rule {
+  min-height: 1px;
+}
+.katex .mspace {
+  display: inline-block;
+}
+.katex .llap,
+.katex .rlap,
+.katex .clap {
+  width: 0;
+  position: relative;
+}
+.katex .llap > .inner,
+.katex .rlap > .inner,
+.katex .clap > .inner {
+  position: absolute;
+}
+.katex .llap > .fix,
+.katex .rlap > .fix,
+.katex .clap > .fix {
+  display: inline-block;
+}
+.katex .llap > .inner {
+  right: 0;
+}
+.katex .rlap > .inner,
+.katex .clap > .inner {
+  left: 0;
+}
+.katex .clap > .inner > span {
+  margin-left: -50%;
+  margin-right: 50%;
+}
+.katex .rule {
+  display: inline-block;
+  border: solid 0;
+  position: relative;
+}
+.katex .overline .overline-line,
+.katex .underline .underline-line,
+.katex .hline {
+  display: inline-block;
+  width: 100%;
+  border-bottom-style: solid;
+}
+.katex .hdashline {
+  display: inline-block;
+  width: 100%;
+  border-bottom-style: dashed;
+}
+.katex .sqrt > .root {
+  /* These values are taken from the definition of `\r@@t`,
+   `\mkern 5mu` and `\mkern -10mu`. */
+  margin-left: 0.2777777778em;
+  margin-right: -0.5555555556em;
+}
+.katex .sizing.reset-size1.size1,
+.katex .fontsize-ensurer.reset-size1.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size1.size2,
+.katex .fontsize-ensurer.reset-size1.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 1.2em;
+}
+.katex .sizing.reset-size1.size3,
+.katex .fontsize-ensurer.reset-size1.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 1.4em;
+}
+.katex .sizing.reset-size1.size4,
+.katex .fontsize-ensurer.reset-size1.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 1.6em;
+}
+.katex .sizing.reset-size1.size5,
+.katex .fontsize-ensurer.reset-size1.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 1.8em;
+}
+.katex .sizing.reset-size1.size6,
+.katex .fontsize-ensurer.reset-size1.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 2em;
+}
+.katex .sizing.reset-size1.size7,
+.katex .fontsize-ensurer.reset-size1.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 2.4em;
+}
+.katex .sizing.reset-size1.size8,
+.katex .fontsize-ensurer.reset-size1.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 2.88em;
+}
+.katex .sizing.reset-size1.size9,
+.katex .fontsize-ensurer.reset-size1.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 3.456em;
+}
+.katex .sizing.reset-size1.size10,
+.katex .fontsize-ensurer.reset-size1.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 4.148em;
+}
+.katex .sizing.reset-size1.size11,
+.katex .fontsize-ensurer.reset-size1.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 4.976em;
+}
+.katex .sizing.reset-size2.size1,
+.katex .fontsize-ensurer.reset-size2.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8333333333em;
+}
+.katex .sizing.reset-size2.size2,
+.katex .fontsize-ensurer.reset-size2.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size2.size3,
+.katex .fontsize-ensurer.reset-size2.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 1.1666666667em;
+}
+.katex .sizing.reset-size2.size4,
+.katex .fontsize-ensurer.reset-size2.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 1.3333333333em;
+}
+.katex .sizing.reset-size2.size5,
+.katex .fontsize-ensurer.reset-size2.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 1.5em;
+}
+.katex .sizing.reset-size2.size6,
+.katex .fontsize-ensurer.reset-size2.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 1.6666666667em;
+}
+.katex .sizing.reset-size2.size7,
+.katex .fontsize-ensurer.reset-size2.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 2em;
+}
+.katex .sizing.reset-size2.size8,
+.katex .fontsize-ensurer.reset-size2.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 2.4em;
+}
+.katex .sizing.reset-size2.size9,
+.katex .fontsize-ensurer.reset-size2.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 2.88em;
+}
+.katex .sizing.reset-size2.size10,
+.katex .fontsize-ensurer.reset-size2.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 3.4566666667em;
+}
+.katex .sizing.reset-size2.size11,
+.katex .fontsize-ensurer.reset-size2.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 4.1466666667em;
+}
+.katex .sizing.reset-size3.size1,
+.katex .fontsize-ensurer.reset-size3.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.7142857143em;
+}
+.katex .sizing.reset-size3.size2,
+.katex .fontsize-ensurer.reset-size3.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8571428571em;
+}
+.katex .sizing.reset-size3.size3,
+.katex .fontsize-ensurer.reset-size3.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size3.size4,
+.katex .fontsize-ensurer.reset-size3.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 1.1428571429em;
+}
+.katex .sizing.reset-size3.size5,
+.katex .fontsize-ensurer.reset-size3.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 1.2857142857em;
+}
+.katex .sizing.reset-size3.size6,
+.katex .fontsize-ensurer.reset-size3.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 1.4285714286em;
+}
+.katex .sizing.reset-size3.size7,
+.katex .fontsize-ensurer.reset-size3.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 1.7142857143em;
+}
+.katex .sizing.reset-size3.size8,
+.katex .fontsize-ensurer.reset-size3.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 2.0571428571em;
+}
+.katex .sizing.reset-size3.size9,
+.katex .fontsize-ensurer.reset-size3.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 2.4685714286em;
+}
+.katex .sizing.reset-size3.size10,
+.katex .fontsize-ensurer.reset-size3.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 2.9628571429em;
+}
+.katex .sizing.reset-size3.size11,
+.katex .fontsize-ensurer.reset-size3.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 3.5542857143em;
+}
+.katex .sizing.reset-size4.size1,
+.katex .fontsize-ensurer.reset-size4.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.625em;
+}
+.katex .sizing.reset-size4.size2,
+.katex .fontsize-ensurer.reset-size4.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.75em;
+}
+.katex .sizing.reset-size4.size3,
+.katex .fontsize-ensurer.reset-size4.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.875em;
+}
+.katex .sizing.reset-size4.size4,
+.katex .fontsize-ensurer.reset-size4.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size4.size5,
+.katex .fontsize-ensurer.reset-size4.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 1.125em;
+}
+.katex .sizing.reset-size4.size6,
+.katex .fontsize-ensurer.reset-size4.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 1.25em;
+}
+.katex .sizing.reset-size4.size7,
+.katex .fontsize-ensurer.reset-size4.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 1.5em;
+}
+.katex .sizing.reset-size4.size8,
+.katex .fontsize-ensurer.reset-size4.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 1.8em;
+}
+.katex .sizing.reset-size4.size9,
+.katex .fontsize-ensurer.reset-size4.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 2.16em;
+}
+.katex .sizing.reset-size4.size10,
+.katex .fontsize-ensurer.reset-size4.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 2.5925em;
+}
+.katex .sizing.reset-size4.size11,
+.katex .fontsize-ensurer.reset-size4.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 3.11em;
+}
+.katex .sizing.reset-size5.size1,
+.katex .fontsize-ensurer.reset-size5.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5555555556em;
+}
+.katex .sizing.reset-size5.size2,
+.katex .fontsize-ensurer.reset-size5.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.6666666667em;
+}
+.katex .sizing.reset-size5.size3,
+.katex .fontsize-ensurer.reset-size5.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.7777777778em;
+}
+.katex .sizing.reset-size5.size4,
+.katex .fontsize-ensurer.reset-size5.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8888888889em;
+}
+.katex .sizing.reset-size5.size5,
+.katex .fontsize-ensurer.reset-size5.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size5.size6,
+.katex .fontsize-ensurer.reset-size5.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 1.1111111111em;
+}
+.katex .sizing.reset-size5.size7,
+.katex .fontsize-ensurer.reset-size5.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 1.3333333333em;
+}
+.katex .sizing.reset-size5.size8,
+.katex .fontsize-ensurer.reset-size5.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 1.6em;
+}
+.katex .sizing.reset-size5.size9,
+.katex .fontsize-ensurer.reset-size5.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 1.92em;
+}
+.katex .sizing.reset-size5.size10,
+.katex .fontsize-ensurer.reset-size5.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 2.3044444444em;
+}
+.katex .sizing.reset-size5.size11,
+.katex .fontsize-ensurer.reset-size5.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 2.7644444444em;
+}
+.katex .sizing.reset-size6.size1,
+.katex .fontsize-ensurer.reset-size6.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5em;
+}
+.katex .sizing.reset-size6.size2,
+.katex .fontsize-ensurer.reset-size6.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.6em;
+}
+.katex .sizing.reset-size6.size3,
+.katex .fontsize-ensurer.reset-size6.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.7em;
+}
+.katex .sizing.reset-size6.size4,
+.katex .fontsize-ensurer.reset-size6.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8em;
+}
+.katex .sizing.reset-size6.size5,
+.katex .fontsize-ensurer.reset-size6.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 0.9em;
+}
+.katex .sizing.reset-size6.size6,
+.katex .fontsize-ensurer.reset-size6.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size6.size7,
+.katex .fontsize-ensurer.reset-size6.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 1.2em;
+}
+.katex .sizing.reset-size6.size8,
+.katex .fontsize-ensurer.reset-size6.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 1.44em;
+}
+.katex .sizing.reset-size6.size9,
+.katex .fontsize-ensurer.reset-size6.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 1.728em;
+}
+.katex .sizing.reset-size6.size10,
+.katex .fontsize-ensurer.reset-size6.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 2.074em;
+}
+.katex .sizing.reset-size6.size11,
+.katex .fontsize-ensurer.reset-size6.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 2.488em;
+}
+.katex .sizing.reset-size7.size1,
+.katex .fontsize-ensurer.reset-size7.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4166666667em;
+}
+.katex .sizing.reset-size7.size2,
+.katex .fontsize-ensurer.reset-size7.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5em;
+}
+.katex .sizing.reset-size7.size3,
+.katex .fontsize-ensurer.reset-size7.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5833333333em;
+}
+.katex .sizing.reset-size7.size4,
+.katex .fontsize-ensurer.reset-size7.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 0.6666666667em;
+}
+.katex .sizing.reset-size7.size5,
+.katex .fontsize-ensurer.reset-size7.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 0.75em;
+}
+.katex .sizing.reset-size7.size6,
+.katex .fontsize-ensurer.reset-size7.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8333333333em;
+}
+.katex .sizing.reset-size7.size7,
+.katex .fontsize-ensurer.reset-size7.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size7.size8,
+.katex .fontsize-ensurer.reset-size7.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 1.2em;
+}
+.katex .sizing.reset-size7.size9,
+.katex .fontsize-ensurer.reset-size7.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 1.44em;
+}
+.katex .sizing.reset-size7.size10,
+.katex .fontsize-ensurer.reset-size7.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 1.7283333333em;
+}
+.katex .sizing.reset-size7.size11,
+.katex .fontsize-ensurer.reset-size7.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 2.0733333333em;
+}
+.katex .sizing.reset-size8.size1,
+.katex .fontsize-ensurer.reset-size8.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.3472222222em;
+}
+.katex .sizing.reset-size8.size2,
+.katex .fontsize-ensurer.reset-size8.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4166666667em;
+}
+.katex .sizing.reset-size8.size3,
+.katex .fontsize-ensurer.reset-size8.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4861111111em;
+}
+.katex .sizing.reset-size8.size4,
+.katex .fontsize-ensurer.reset-size8.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5555555556em;
+}
+.katex .sizing.reset-size8.size5,
+.katex .fontsize-ensurer.reset-size8.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 0.625em;
+}
+.katex .sizing.reset-size8.size6,
+.katex .fontsize-ensurer.reset-size8.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 0.6944444444em;
+}
+.katex .sizing.reset-size8.size7,
+.katex .fontsize-ensurer.reset-size8.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8333333333em;
+}
+.katex .sizing.reset-size8.size8,
+.katex .fontsize-ensurer.reset-size8.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size8.size9,
+.katex .fontsize-ensurer.reset-size8.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 1.2em;
+}
+.katex .sizing.reset-size8.size10,
+.katex .fontsize-ensurer.reset-size8.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 1.4402777778em;
+}
+.katex .sizing.reset-size8.size11,
+.katex .fontsize-ensurer.reset-size8.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 1.7277777778em;
+}
+.katex .sizing.reset-size9.size1,
+.katex .fontsize-ensurer.reset-size9.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.2893518519em;
+}
+.katex .sizing.reset-size9.size2,
+.katex .fontsize-ensurer.reset-size9.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.3472222222em;
+}
+.katex .sizing.reset-size9.size3,
+.katex .fontsize-ensurer.reset-size9.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4050925926em;
+}
+.katex .sizing.reset-size9.size4,
+.katex .fontsize-ensurer.reset-size9.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 0.462962963em;
+}
+.katex .sizing.reset-size9.size5,
+.katex .fontsize-ensurer.reset-size9.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5208333333em;
+}
+.katex .sizing.reset-size9.size6,
+.katex .fontsize-ensurer.reset-size9.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5787037037em;
+}
+.katex .sizing.reset-size9.size7,
+.katex .fontsize-ensurer.reset-size9.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 0.6944444444em;
+}
+.katex .sizing.reset-size9.size8,
+.katex .fontsize-ensurer.reset-size9.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8333333333em;
+}
+.katex .sizing.reset-size9.size9,
+.katex .fontsize-ensurer.reset-size9.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size9.size10,
+.katex .fontsize-ensurer.reset-size9.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 1.2002314815em;
+}
+.katex .sizing.reset-size9.size11,
+.katex .fontsize-ensurer.reset-size9.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 1.4398148148em;
+}
+.katex .sizing.reset-size10.size1,
+.katex .fontsize-ensurer.reset-size10.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.2410800386em;
+}
+.katex .sizing.reset-size10.size2,
+.katex .fontsize-ensurer.reset-size10.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.2892960463em;
+}
+.katex .sizing.reset-size10.size3,
+.katex .fontsize-ensurer.reset-size10.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.337512054em;
+}
+.katex .sizing.reset-size10.size4,
+.katex .fontsize-ensurer.reset-size10.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 0.3857280617em;
+}
+.katex .sizing.reset-size10.size5,
+.katex .fontsize-ensurer.reset-size10.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4339440694em;
+}
+.katex .sizing.reset-size10.size6,
+.katex .fontsize-ensurer.reset-size10.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4821600771em;
+}
+.katex .sizing.reset-size10.size7,
+.katex .fontsize-ensurer.reset-size10.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 0.5785920926em;
+}
+.katex .sizing.reset-size10.size8,
+.katex .fontsize-ensurer.reset-size10.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 0.6943105111em;
+}
+.katex .sizing.reset-size10.size9,
+.katex .fontsize-ensurer.reset-size10.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8331726133em;
+}
+.katex .sizing.reset-size10.size10,
+.katex .fontsize-ensurer.reset-size10.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .sizing.reset-size10.size11,
+.katex .fontsize-ensurer.reset-size10.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 1.1996142719em;
+}
+.katex .sizing.reset-size11.size1,
+.katex .fontsize-ensurer.reset-size11.size1 {
+  /* stylelint-disable-next-line */
+  font-size: 0.2009646302em;
+}
+.katex .sizing.reset-size11.size2,
+.katex .fontsize-ensurer.reset-size11.size2 {
+  /* stylelint-disable-next-line */
+  font-size: 0.2411575563em;
+}
+.katex .sizing.reset-size11.size3,
+.katex .fontsize-ensurer.reset-size11.size3 {
+  /* stylelint-disable-next-line */
+  font-size: 0.2813504823em;
+}
+.katex .sizing.reset-size11.size4,
+.katex .fontsize-ensurer.reset-size11.size4 {
+  /* stylelint-disable-next-line */
+  font-size: 0.3215434084em;
+}
+.katex .sizing.reset-size11.size5,
+.katex .fontsize-ensurer.reset-size11.size5 {
+  /* stylelint-disable-next-line */
+  font-size: 0.3617363344em;
+}
+.katex .sizing.reset-size11.size6,
+.katex .fontsize-ensurer.reset-size11.size6 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4019292605em;
+}
+.katex .sizing.reset-size11.size7,
+.katex .fontsize-ensurer.reset-size11.size7 {
+  /* stylelint-disable-next-line */
+  font-size: 0.4823151125em;
+}
+.katex .sizing.reset-size11.size8,
+.katex .fontsize-ensurer.reset-size11.size8 {
+  /* stylelint-disable-next-line */
+  font-size: 0.578778135em;
+}
+.katex .sizing.reset-size11.size9,
+.katex .fontsize-ensurer.reset-size11.size9 {
+  /* stylelint-disable-next-line */
+  font-size: 0.6945337621em;
+}
+.katex .sizing.reset-size11.size10,
+.katex .fontsize-ensurer.reset-size11.size10 {
+  /* stylelint-disable-next-line */
+  font-size: 0.8336012862em;
+}
+.katex .sizing.reset-size11.size11,
+.katex .fontsize-ensurer.reset-size11.size11 {
+  /* stylelint-disable-next-line */
+  font-size: 1em;
+}
+.katex .delimsizing.size1 {
+  font-family: KaTeX_Size1;
+}
+.katex .delimsizing.size2 {
+  font-family: KaTeX_Size2;
+}
+.katex .delimsizing.size3 {
+  font-family: KaTeX_Size3;
+}
+.katex .delimsizing.size4 {
+  font-family: KaTeX_Size4;
+}
+.katex .delimsizing.mult .delim-size1 > span {
+  font-family: KaTeX_Size1;
+}
+.katex .delimsizing.mult .delim-size4 > span {
+  font-family: KaTeX_Size4;
+}
+.katex .nulldelimiter {
+  display: inline-block;
+  width: 0.12em;
+}
+.katex .delimcenter {
+  position: relative;
+}
+.katex .op-symbol {
+  position: relative;
+}
+.katex .op-symbol.small-op {
+  font-family: KaTeX_Size1;
+}
+.katex .op-symbol.large-op {
+  font-family: KaTeX_Size2;
+}
+.katex .op-limits > .vlist-t {
+  text-align: center;
+}
+.katex .accent > .vlist-t {
+  text-align: center;
+}
+.katex .accent .accent-body {
+  position: relative;
+}
+.katex .accent .accent-body:not(.accent-full) {
+  width: 0;
+}
+.katex .overlay {
+  display: block;
+}
+.katex .mtable .vertical-separator {
+  display: inline-block;
+  min-width: 1px;
+}
+.katex .mtable .arraycolsep {
+  display: inline-block;
+}
+.katex .mtable .col-align-c > .vlist-t {
+  text-align: center;
+}
+.katex .mtable .col-align-l > .vlist-t {
+  text-align: left;
+}
+.katex .mtable .col-align-r > .vlist-t {
+  text-align: right;
+}
+.katex .svg-align {
+  text-align: left;
+}
+.katex svg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  fill: currentColor;
+  stroke: currentColor;
+  fill-rule: nonzero;
+  fill-opacity: 1;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+}
+.katex svg path {
+  stroke: none;
+}
+.katex img {
+  border-style: none;
+  min-width: 0;
+  min-height: 0;
+  max-width: none;
+  max-height: none;
+}
+.katex .stretchy {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.katex .stretchy::before, .katex .stretchy::after {
+  content: "";
+}
+.katex .hide-tail {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.katex .halfarrow-left {
+  position: absolute;
+  left: 0;
+  width: 50.2%;
+  overflow: hidden;
+}
+.katex .halfarrow-right {
+  position: absolute;
+  right: 0;
+  width: 50.2%;
+  overflow: hidden;
+}
+.katex .brace-left {
+  position: absolute;
+  left: 0;
+  width: 25.1%;
+  overflow: hidden;
+}
+.katex .brace-center {
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  overflow: hidden;
+}
+.katex .brace-right {
+  position: absolute;
+  right: 0;
+  width: 25.1%;
+  overflow: hidden;
+}
+.katex .x-arrow-pad {
+  padding: 0 0.5em;
+}
+.katex .cd-arrow-pad {
+  padding: 0 0.55556em 0 0.27778em;
+}
+.katex .x-arrow,
+.katex .mover,
+.katex .munder {
+  text-align: center;
+}
+.katex .boxpad {
+  padding: 0 0.3em;
+}
+.katex .fbox,
+.katex .fcolorbox {
+  box-sizing: border-box;
+  border: 0.04em solid;
+}
+.katex .cancel-pad {
+  padding: 0 0.2em;
+}
+.katex .cancel-lap {
+  margin-left: -0.2em;
+  margin-right: -0.2em;
+}
+.katex .sout {
+  border-bottom-style: solid;
+  border-bottom-width: 0.08em;
+}
+.katex .angl {
+  box-sizing: border-box;
+  border-top: 0.049em solid;
+  border-right: 0.049em solid;
+  margin-right: 0.03889em;
+}
+.katex .anglpad {
+  padding: 0 0.03889em;
+}
+.katex .eqn-num::before {
+  counter-increment: katexEqnNo;
+  content: "(" counter(katexEqnNo) ")";
+}
+.katex .mml-eqn-num::before {
+  counter-increment: mmlEqnNo;
+  content: "(" counter(mmlEqnNo) ")";
+}
+.katex .mtr-glue {
+  width: 50%;
+}
+.katex .cd-vert-arrow {
+  display: inline-block;
+  position: relative;
+}
+.katex .cd-label-left {
+  display: inline-block;
+  position: absolute;
+  right: calc(50% + 0.3em);
+  text-align: left;
+}
+.katex .cd-label-right {
+  display: inline-block;
+  position: absolute;
+  left: calc(50% + 0.3em);
+  text-align: right;
+}
+
+.katex-display {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
+}
+.katex-display > .katex {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+}
+.katex-display > .katex > .katex-html {
+  display: block;
+  position: relative;
+}
+.katex-display > .katex > .katex-html > .tag {
+  position: absolute;
+  right: 0;
+}
+
+.katex-display.leqno > .katex > .katex-html > .tag {
+  left: 0;
+  right: auto;
+}
+
+.katex-display.fleqn > .katex {
+  text-align: left;
+  padding-left: 2em;
+}
+
+body {
+  counter-reset: katexEqnNo mmlEqnNo;
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: Tomorrow
+  Author: Chris Kempson (http://chriskempson.com)
+  License: ~ MIT (or more permissive) [via base16-schemes-source]
+  Maintainer: @highlightjs/core-team
+  Version: 2021.09.0
+*/
+/*
+  WARNING: DO NOT EDIT THIS FILE DIRECTLY.
+
+  This theme file was auto-generated from the Base16 scheme tomorrow
+  by the Highlight.js Base16 template builder.
+
+  - https://github.com/highlightjs/base16-highlightjs
+*/
+/*
+base00  #ffffff  Default Background
+base01  #e0e0e0  Lighter Background (Used for status bars, line number and folding marks)
+base02  #d6d6d6  Selection Background
+base03  #8e908c  Comments, Invisibles, Line Highlighting
+base04  #969896  Dark Foreground (Used for status bars)
+base05  #4d4d4c  Default Foreground, Caret, Delimiters, Operators
+base06  #282a2e  Light Foreground (Not often used)
+base07  #1d1f21  Light Background (Not often used)
+base08  #c82829  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+base09  #f5871f  Integers, Boolean, Constants, XML Attributes, Markup Link Url
+base0A  #eab700  Classes, Markup Bold, Search Text Background
+base0B  #718c00  Strings, Inherited Class, Markup Code, Diff Inserted
+base0C  #3e999f  Support, Regular Expressions, Escape Characters, Markup Quotes
+base0D  #4271ae  Functions, Methods, Attribute IDs, Headings
+base0E  #8959a8  Keywords, Storage, Selector, Markup Italic, Diff Changed
+base0F  #a3685a  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+*/
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+.hljs {
+  color: #4d4d4c;
+  background: #ffffff
+}
+.hljs::selection,
+.hljs ::selection {
+  background-color: #d6d6d6;
+  color: #4d4d4c
+}
+/* purposely do not highlight these things */
+.hljs-formula,
+.hljs-params,
+.hljs-property {
+  
+}
+/* base03 - #8e908c -  Comments, Invisibles, Line Highlighting */
+.hljs-comment {
+  color: #8e908c
+}
+/* base04 - #969896 -  Dark Foreground (Used for status bars) */
+.hljs-tag {
+  color: #969896
+}
+/* base05 - #4d4d4c -  Default Foreground, Caret, Delimiters, Operators */
+.hljs-subst,
+.hljs-punctuation,
+.hljs-operator {
+  color: #4d4d4c
+}
+.hljs-operator {
+  opacity: 0.7
+}
+/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
+.hljs-bullet,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-deletion {
+  color: #c82829
+}
+/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */
+.hljs-symbol,
+.hljs-number,
+.hljs-link,
+.hljs-attr,
+.hljs-variable.constant_,
+.hljs-literal {
+  color: #f5871f
+}
+/* base0A - Classes, Markup Bold, Search Text Background */
+.hljs-title,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+  color: #eab700
+}
+.hljs-strong {
+  font-weight: bold;
+  color: #eab700
+}
+/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */
+.hljs-code,
+.hljs-addition,
+.hljs-title.class_.inherited__,
+.hljs-string {
+  color: #718c00
+}
+/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */
+/* guessing */
+.hljs-built_in,
+.hljs-doctag,
+.hljs-quote,
+.hljs-keyword.hljs-atrule,
+.hljs-regexp {
+  color: #3e999f
+}
+/* base0D - Functions, Methods, Attribute IDs, Headings */
+.hljs-function .hljs-title,
+.hljs-attribute,
+.ruby .hljs-property,
+.hljs-title.function_,
+.hljs-section {
+  color: #4271ae
+}
+/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */
+/* .hljs-selector-id, */
+/* .hljs-selector-class, */
+/* .hljs-selector-attr, */
+/* .hljs-selector-pseudo, */
+.hljs-type,
+.hljs-template-tag,
+.diff .hljs-meta,
+.hljs-keyword {
+  color: #8959a8
+}
+.hljs-emphasis {
+  color: #8959a8;
+  font-style: italic
+}
+/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */
+/*
+  prevent top level .keyword and .string scopes
+  from leaking into meta by accident
+*/
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string {
+  color: #a3685a
+}
+/* for v10 compatible themes */
+.hljs-meta .hljs-keyword,
+.hljs-meta-keyword {
+  font-weight: bold
+}
+.lfe-body{font-size:16px;line-height:1.5;color:#404040}.lfe-body{font-family:system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Noto Sans,Segoe UI,Helvetica,Arial,sans-serif}.lfe-body:lang(zh-CN){font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Noto Sans,Noto Sans SC,Source Sans Pro,Source Han Sans,Segoe UI,Arial,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}.lfe-color-inverse{color:#ffffffd9}.lfe-h1,.lfe-h2,.lfe-h3,.lfe-h4,.lfe-h5,.lfe-h6{margin-top:0;margin-bottom:.5em;font-family:inherit;font-weight:700;line-height:1.2;color:#262626}section.side>.lfe-h1,section.side>.lfe-h2,section.side>.lfe-h3,section.side>.lfe-h4,section.side>.lfe-h5,section.side>.lfe-h6{font-weight:400}.lfe-h1{font-size:1.75em}@media (max-width: 576px){.lfe-h1{font-size:1.625em}}.lfe-h2{font-size:1.25em}@media (max-width: 576px){.lfe-h2{font-size:1.25em}}.lfe-h3{font-size:1.125em}@media (max-width: 576px){.lfe-h3{font-size:1.125em}}.lfe-h4{font-size:1em}@media (max-width: 576px){.lfe-h4{font-size:1em}}.lfe-h5{font-size:.875em}@media (max-width: 576px){.lfe-h5{font-size:.875em}}.lfe-h6{font-size:.875em}@media (max-width: 576px){.lfe-h6{font-size:.8125em}}.lfe-caption{color:gray;font-size:.875em}.lform-size-small{font-size:.875em;padding:.125em .5em}.lform-size-middle{font-size:.875em;padding:.3125em 1em}.lform-size-large{font-size:1em;padding:.5em 1em}a{text-decoration:none;transition:filter .1s ease;color:rgb(var(--lcolor--link, 52, 152, 219));cursor:pointer}a:hover{filter:brightness(.75)}p{margin-block:0}p:not(:first-child){margin-block-start:1em}p:not(:last-child){margin-block-end:1em}table{border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:keep-all;margin:10px;font-variant-numeric:tabular-nums}th,td{border:1px solid #ddd;padding:6px 13px}blockquote{padding:10px 20px;margin:0 0 20px;border-left:5px solid #eee}.lfe-code{font-family:monospace;font-size:.875em;background-color:#fafafa;border:1px solid #e8e8e8;border-radius:2px;margin:0;padding:.375em .5em}.lfe-marked-wrap{display:block;overflow:hidden;box-sizing:border-box;padding:0;margin:0}.lfe-marked{overflow-wrap:break-word}.lfe-marked h1,.lfe-marked h2{padding-bottom:.2em;border-bottom:solid 1px #eee}.lfe-marked h1{margin:.5rem 0;font-size:2em}.lfe-marked h2{margin:.5rem 0;font-size:1.5em}.lfe-marked h3{margin:.5rem 0;font-size:1.17em}.lfe-marked h4{margin:.5rem 0;font-size:1em}.lfe-marked h5{margin:.5rem 0;font-size:.83em}.lfe-marked h6{margin:.5rem 0;font-size:.67em}.lfe-marked img{max-width:100%}.lfe-marked p{margin:1rem 0}.lfe-marked ul,.lfe-marked ol{padding-left:2em}.lfe-marked li.task-list-item{list-style-type:none}.lfe-marked hr{margin:1em 0;height:0;border:none;border-bottom:solid 1px #eee}.lfe-marked pre,.lfe-marked code{font-family:monospace;font-size:.875em;background-color:#fafafa;border:1px solid #e8e8e8;border-radius:2px}.lfe-marked .katex-display{overflow:auto hidden}.lfe-marked pre{margin:0;padding:1em;overflow:auto hidden}.lfe-marked pre>code{font-size:unset;margin:0;padding:0;white-space:pre;border:none}.lfe-marked code{margin:0 .2em;padding:.1em .2em;white-space:pre-wrap;tab-size:4;-moz-tab-size:4}.lfe-marked p code,.lfe-marked li code{display:inline;overflow-wrap:break-word;word-break:break-all}button[data-v-f21de448],.l-button[data-v-f21de448]{--l-button--real-color: var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)));display:inline-block;outline:none;cursor:pointer;font-weight:inherit;line-height:1.5;text-align:center;vertical-align:middle;border-radius:3px;border:1px solid rgb(var(--l-button--real-color));background:rgba(var(--l-button--real-color),0) none;color:rgb(var(--l-button--real-color))}button.solid[data-v-f21de448],.l-button.solid[data-v-f21de448]{background-color:rgba(var(--l-button--real-color),1);color:#fff}button[data-v-f21de448]:not(:disabled):hover,.l-button[data-v-f21de448]:not(:disabled):hover{filter:unset;background-color:rgba(var(--l-button--real-color),.1)}button:not(:disabled):hover.solid[data-v-f21de448],.l-button:not(:disabled):hover.solid[data-v-f21de448]{background-color:rgba(var(--l-button--real-color),.9)}button[data-v-f21de448]:not(:disabled):active,.l-button[data-v-f21de448]:not(:disabled):active{filter:brightness(.8)}button[data-v-f21de448]:disabled,.l-button[data-v-f21de448]:disabled{cursor:not-allowed;opacity:.65}.l-card[data-v-e01570a1]{display:block;background-color:#fff;border-radius:4px;box-shadow:0 1px 3px #1a1a1a1a;box-sizing:border-box;margin-bottom:1.3em;padding:var(--l-card--padding, 1.3em)}.l-card.burger[data-v-e01570a1]{padding:0;display:flex;flex-flow:column}.l-card.burger[data-v-e01570a1]>*{padding:var(--l-card--padding, 1.3em)}.l-card.burger .body[data-v-e01570a1]{flex:1}.l-card.burger .header[data-v-e01570a1]{border-bottom:1px solid var(--l-card--burger-border-color, #e8e8e8)}.l-card.burger .footer[data-v-e01570a1]{border-top:1px solid var(--l-card--burger-border-color, #e8e8e8)}a[data-v-bade3303]{text-decoration:none;transition:filter .1s ease;color:var(--l-link--color, rgb(var(--lcolor-rgb, var(--lcolor--link, var(--lcolor--primary, 52, 152, 219)))));cursor:pointer}a[data-v-bade3303]:hover{filter:brightness(.75)}a.disabled[data-v-bade3303]{color:var(--l-link--color-disabled, rgb(var(--lcolor-rgb, var(--lcolor--disabled, var(--lcolor--primary, 52, 152, 219)))));cursor:default;pointer-events:none}.modal[data-v-7be516a0]{top:0;left:0;right:0;bottom:0;z-index:1000;overflow:auto;position:fixed;transition:opacity .3s ease}.modal>.background[data-v-7be516a0]{top:0;left:0;right:0;bottom:0;position:absolute;z-index:-1145141919;background-color:#00000080}.modal.hide[data-v-7be516a0]{z-index:-114514;opacity:0;pointer-events:none;transition:opacity .3s ease,z-index 0s ease .3s}.container[data-v-a24bec1e]{--l-card--margin-bottom: 0;--l-card--padding: 0;top:50%;left:50%;position:absolute;transform:translate(-50%,-50%);padding:1em;max-width:var(--l-modal--max-width, 85vw);min-width:var(--l-modal--min-width, 360px)}.container.type-burger[data-v-a24bec1e]{display:flex;flex-flow:column}.container.type-burger[data-v-a24bec1e]>*:nth-child(1){display:flex;flex-flow:row nowrap}.container.type-burger>*:nth-child(1)>[data-v-a24bec1e-s]{flex:1}.container.type-burger>*:nth-child(1)>.close[data-v-a24bec1e]{flex:0;cursor:pointer;font-size:1.25em;line-height:1}.container.type-burger[data-v-a24bec1e]>*:nth-child(2){margin:.875em 0;flex:1}span[data-v-c83b85a7]{font-size:.875em;display:inline-block;padding:0 .5em;box-sizing:border-box;font-weight:400;line-height:1.5;background-color:#e8e8e8;border:1px solid #bfbfbf;border-radius:2px;color:#575757}sup[data-v-c9c7a2f4]{display:inline-block;position:relative;margin-right:-.8em;padding-left:.2em;padding-right:.2em;left:-.6em;top:-.5em;box-sizing:border-box;min-width:1.2em;height:1.2em;font-size:.7em;line-height:1;text-align:center;color:#fff;border-radius:.6em}sup.no-text[data-v-c9c7a2f4]{left:-.3em;top:-.7em;min-width:.5em;height:.5em;border-radius:.25em}.stat[data-v-09411bbf]{display:inline-block}.stat>.field[data-v-09411bbf]{display:inline-block!important;color:#333}.color-inv.stat>.field[data-v-09411bbf]{color:#fff}.with-vr.stat>.field[data-v-09411bbf]{border-right:1px solid #555}.with-vr.color-inv.stat>.field[data-v-09411bbf]{border-right:1px solid #ddd}.with-vr.stat>.field[data-v-09411bbf]:last-child{border-right:none}.stacked.stat>.field[data-v-09411bbf]{padding:0 .8em}.stacked.stat>.field>.name[data-v-09411bbf],.stacked.stat>.field>.value[data-v-09411bbf]{display:block;text-align:center;white-space:nowrap}.tiled.stat>.field[data-v-09411bbf]{margin-right:.6em}.tiled.stat>.field[data-v-09411bbf]:last-child{margin-right:unset}.tiled.stat>.field>.value[data-v-09411bbf]{margin-left:.2em}.row[data-v-a7859019]{display:flex;padding:.5em;align-items:baseline}@media (max-width: 576px){.row[data-v-a7859019]{flex-direction:column}}.row>span[data-v-a7859019]{display:inline-block;flex:0 0 var(--l-form-layout--flex-basis, 10em);padding-right:1em;box-sizing:border-box;text-align:left;font-weight:700}@media (max-width: 576px){.row>span[data-v-a7859019]{flex-basis:auto}}.row>div[data-v-a7859019]{display:block;width:0;flex:1}@media (max-width: 576px){.row>div[data-v-a7859019]{width:100%;flex:unset}}.row>div>.error[data-v-a7859019]{font-size:.875em;color:red}.row>div>.error>p[data-v-a7859019]{margin:0;padding:0}div[data-v-70065e40]{display:inline-block;margin-right:1em}input[data-v-70065e40]{display:none}label>.fa-input[data-v-70065e40]{margin-right:var(--l-radio--input-margin-right, .3em);color:#ccc}input:disabled+label>.fa-input[data-v-70065e40]{opacity:.4;cursor:not-allowed}input:checked+label>.fa-input[data-v-70065e40]{color:var(--l-radio--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))))}label>img[data-v-70065e40-s]{vertical-align:middle}input:enabled+label:hover>.fa-input[data-v-70065e40]{color:var(--l-radio--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))))}div[data-v-eb358e52]{display:inline-block;margin-right:1em}input[data-v-eb358e52]{display:none}label>.fa-input[data-v-eb358e52]{margin-right:var(--l-check--input-margin-right, .3em);color:#ccc}input:disabled+label>.fa-input[data-v-eb358e52]{opacity:.4;cursor:not-allowed}input:checked+label>.fa-input[data-v-eb358e52]{color:var(--l-check--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))))}label>img[data-v-eb358e52-s]{vertical-align:middle}input:enabled+label:hover>.fa-input[data-v-eb358e52]{color:var(--l-check--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))))}input[data-v-33028704],textarea[data-v-33028704],.refined-input[data-v-33028704]{display:inline-block;box-sizing:border-box;min-width:0;width:var(--l-text--width, 100%);line-height:1.5;outline:none;border-radius:3px;border:1px solid #bfbfbf;background:#fff;flex:1;font-size:.875em;padding:.3125em 1em}input[data-v-33028704]:focus,textarea[data-v-33028704]:focus,.refined-input[data-v-33028704]:focus-within{border-color:var(--l-radio--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))));box-shadow:0 0 3px var(--l-radio--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))))}input[data-v-33028704]:disabled,textarea[data-v-33028704]:disabled,.refined-input.disabled[data-v-33028704]{color:#00000040;border-color:#e8e8e8;background-color:#fafafa;cursor:not-allowed}.refined-input[data-v-33028704]{display:inline-flex;align-items:baseline;flex-flow:row nowrap;padding-left:.5em;padding-right:.5em}.refined-input[data-v-33028704]>*{flex-shrink:0}.refined-input>input[data-v-33028704],.refined-input:focus-within>input[data-v-33028704]{border:none;box-shadow:none;padding:0 .25em;font-size:1em}.combo-wrapper[data-v-d3bf5d4d]{position:relative;display:flex;align-items:baseline;flex:1;cursor:pointer}.combo-wrapper.inline[data-v-d3bf5d4d]{display:inline-flex}.combo-wrapper.disabled[data-v-d3bf5d4d]{cursor:not-allowed}.combo-wrapper.disabled>.text[data-v-d3bf5d4d]{color:#00000040;border-color:#e8e8e8;background:#fafafa}.combo-wrapper.disabled[data-v-d3bf5d4d]>*{pointer-events:none}.combo-wrapper>.text[data-v-d3bf5d4d]{box-sizing:border-box;margin-top:.2em;margin-bottom:.2em;flex:1;border-radius:3px;border:1px solid #ccc;text-overflow:ellipsis;white-space:nowrap;background:#fff;padding-right:1.5em}.combo-wrapper>.arrow[data-v-d3bf5d4d]{margin-left:-1.3em;margin-right:1.3em;width:0;transition-duration:.4s}.combo-wrapper.shown>.combo-wrapper>.arrow[data-v-d3bf5d4d]{transform:scaleY(-1)}.combo-wrapper>.ruler[data-v-d3bf5d4d]{position:absolute;max-height:0;width:100%;bottom:0}.dropdown[data-v-d3bf5d4d]{color:#333;position:fixed;background:#fff;border-radius:2px;border:solid 1px #eee;box-shadow:0 0 1em .1em #00000026;z-index:100000;transition:all .15s ease-out;overflow-y:auto}.dropdown>ul[data-v-d3bf5d4d]{padding:0;margin:0;max-height:10em;list-style:none;overflow:auto;outline:none}.dropdown>ul>li[data-v-d3bf5d4d]{display:block;padding:.4em .5em;cursor:pointer}.dropdown>ul>li[data-v-d3bf5d4d]:hover{background:#eee}.list-wrap .header-wrap[data-v-83fd4045]{padding-bottom:.5em}.list-wrap.table[data-v-83fd4045]{display:table;border-collapse:collapse;border-spacing:0;min-width:100%}.list-wrap.table .header-wrap[data-v-83fd4045]{display:table-header-group}.list-wrap.table .row-wrap[data-v-83fd4045]{display:table-row-group}.list-wrap.table .header-wrap>.header:last-child>[data-v-83fd4045-s]{padding-bottom:.5em}.list-wrap.table .header-wrap>.header[data-v-83fd4045],.list-wrap.table .row-wrap>.row[data-v-83fd4045]{display:table-row}.list-wrap.table .header-wrap>.header>[data-v-83fd4045-s],.list-wrap.table .row-wrap>.row>[data-v-83fd4045-s]{display:table-cell;vertical-align:middle;padding-top:.5em}.list-wrap.table .header-wrap>.header>[data-v-83fd4045-s]:not(:last-child),.list-wrap.table .row-wrap>.row>[data-v-83fd4045-s]:not(:last-child){padding-right:6px}.list-wrap.table .header-wrap>.header:not(:last-child)>[data-v-83fd4045-s],.list-wrap.table .row-wrap>.row:not(:last-child)>[data-v-83fd4045-s]{padding-bottom:.5em}.list-wrap.flex .header-wrap[data-v-83fd4045],.list-wrap.flex .row-wrap[data-v-83fd4045]{padding:.5em 0;vertical-align:middle}.list-wrap.flex .header-wrap>.header[data-v-83fd4045],.list-wrap.flex .row-wrap>.row[data-v-83fd4045]{display:flex;align-items:center;justify-content:space-between}.list-wrap.flex .header-wrap>.header>[data-v-83fd4045-s]:not(:last-child),.list-wrap.flex .row-wrap>.row>[data-v-83fd4045-s]:not(:last-child){padding-right:6px}.list-wrap.block .header[data-v-83fd4045],.list-wrap.block .row[data-v-83fd4045]{vertical-align:middle}.list-wrap.block .header[data-v-83fd4045]{padding:.5em 0}.list-wrap.border .header-wrap[data-v-83fd4045]{border-bottom:2px solid #e8e8e8}.list-wrap.border .row[data-v-83fd4045]:not(:last-child){border-bottom:1px solid #e8e8e8}.list-wrap .row[data-v-83fd4045]{font-variant-numeric:tabular-nums}.bottom-wrap[data-v-83fd4045]{padding:.75em 0}.bottom-wrap.float[data-v-83fd4045]{padding:.5em 1em;position:fixed;bottom:0;width:calc(100% - 122px);max-width:1168px;margin-left:-21px;box-shadow:0 2px 4px #00000026,inset 0 0 1px #00000080;background-color:#fff;z-index:99}@media (max-width: 576px){.bottom-wrap[data-v-83fd4045]{width:calc(100% - 64px)}}div[data-v-6006e224]{display:flex}button[data-v-6006e224]{--l-button--real-color: var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)));margin-right:.5em;padding:2px 4px;font-size:1rem;cursor:pointer;min-width:1.5em;min-height:1.5em;background:#fff;border:1px solid #bfbfbf;border-radius:6px}button>span[data-v-6006e224]{margin:0 auto;height:100%;box-sizing:border-box;vertical-align:middle;font-size:.875em;display:inline-block}button.selected[data-v-6006e224]{background:rgb(var(--l-button--real-color));border-color:rgb(var(--l-button--real-color));cursor:default;color:#fff}button[data-v-6006e224]:last-child{margin-right:0}button[data-v-6006e224]:hover{border-color:rgb(var(--l-button--real-color))}button[data-v-6006e224]:focus{outline:0}nav[data-v-c99a40b0]{--l-nav--primary-color: rgb(var(--lcolor-rgb, var(--lcolor--link, var(--lcolor--primary, 52, 152, 219))))}nav>ul[data-v-c99a40b0]{padding:0;margin:0;list-style:none;outline:none}nav>ul>li[data-v-c99a40b0]{display:inline-block;margin:0 .5em;cursor:pointer}nav>ul>li.selected[data-v-c99a40b0]{cursor:default;color:var(--l-nav--primary-color)}nav>ul>li[data-v-c99a40b0]:first-child{margin-left:0}nav>ul>li[data-v-c99a40b0]:last-child{margin-right:0}.nav-item[data-v-327d3ec0]{position:relative;font-size:.875rem}.nav-item>.target[data-v-327d3ec0]{--l-link--color: $color;color:#333;display:block;padding:.625em .5em;text-decoration:none}.nav-item>.target.active[data-v-327d3ec0]{border-right:2px solid var(--l-side-nav-item--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))));background-color:var(--l-side-nav-item--bgcolor, rgb(var(--lcolor-rgb, var(--lcolor--primary-bg, var(--lcolor--primary, 52, 152, 219)))))!important;color:var(--l-side-nav-item--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))))}.nav-item>.target[data-v-327d3ec0]:hover{color:var(--l-side-nav-item--color, rgb(var(--lcolor-rgb, var(--lcolor--primary, var(--lcolor--primary, 52, 152, 219)))))}.nav-item>.target>.icon[data-v-327d3ec0]{text-align:center;margin:0 .3em;display:inline-block;width:1.5em;vertical-align:middle}.nav-item>.target>.text[data-v-327d3ec0]{vertical-align:middle;cursor:pointer}.nav-item>.target>.right[data-v-327d3ec0]{position:absolute;right:.75em;top:.5em}.nav-item>.subs>.nav-item[data-v-327d3ec0]{background-color:rgb(var(--lcolor-rgb, var(--lcolor--grey-1, var(--lcolor--primary, 52, 152, 219))))}.nav-item>.subs>.nav-item>.target[data-v-327d3ec0]{padding-left:1.5em}.nav-item>.subs>.nav-item>.subs>.nav-item>.target[data-v-327d3ec0]{padding-left:2em}.nav-item>.subs>.nav-item>.subs>.nav-item>.subs>.nav-item>.target[data-v-327d3ec0]{padding-left:2.5em}nav>.logo[data-v-ede428fa]{display:block;height:4em;border-bottom:1px solid #f0f0f0;padding:0 3.5em}nav>.logo[data-v-ede428fa]:after{content:"";display:inline-block;height:100%;width:0;vertical-align:middle}nav>.logo[data-v-ede428fa]>.logo{text-align:center;vertical-align:middle;width:9em}nav>.group-title[data-v-ede428fa]{font-size:.875em;padding:.8em;color:#00000080}nav>.group-title>.icon[data-v-ede428fa]{text-align:center;margin:0 .3em;display:inline-block;width:1.5em;vertical-align:middle}nav>.group-title>.text[data-v-ede428fa]{vertical-align:middle}.full-container[data-v-674c5e35]{display:block;margin-top:1.5em;margin-bottom:1.5em}.full-container[data-v-674c5e35]:after{display:block;content:"";clear:both}.layout[data-v-14afcb5f]{height:100%;width:100%;box-sizing:border-box;display:flex;overflow:hidden}.layout>div[data-v-14afcb5f]{flex:1;display:flex;flex-flow:column;height:100%;min-height:100%}.layout header[data-v-14afcb5f],.layout nav[data-v-14afcb5f],.layout footer[data-v-14afcb5f]{background:#fff;box-sizing:border-box;display:block}.layout header[data-v-14afcb5f]{min-height:4em;height:4em;border-bottom:1px solid #f0f0f0}@media (width <= 576px){.layout header[data-v-14afcb5f]{height:auto!important}}.layout nav[data-v-14afcb5f]{overflow:hidden auto}.layout main[data-v-14afcb5f]{flex:1;background:#fafafa;color:#333;line-height:1.5;padding-left:1em;padding-right:1em;overflow:auto}.layout main[data-v-14afcb5f]>.breadcrumb{display:flex;flex-flow:column;justify-content:center;align-items:flex-start;height:5em;padding-left:1em}.layout main[data-v-14afcb5f]>*{margin-left:auto;margin-right:auto}
+
+li[data-v-b8b19356]{color:var(--lfe-color--grey-5);cursor:pointer}li a[data-v-b8b19356]{display:inline-block;width:100%;box-sizing:border-box;color:inherit;padding:.25em .5em;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}li .icon[data-v-b8b19356]{text-align:center;margin-right:.75em;display:inline-block;width:1.5em}li .title.minor[data-v-b8b19356]{font-size:.875em}li[data-v-b8b19356]:hover{background-color:#f2f2f2}
+nav[data-v-61a2a2b1]{background:#fff;padding:1.25em .75em}nav>.nav-group[data-v-61a2a2b1]{margin:.25em 0}nav>.nav-group[data-v-61a2a2b1]::after{content:"";display:block;margin:1em 0;border-bottom:1px solid var(--lfe-color--grey-2)}nav>.nav-group[data-v-61a2a2b1]:last-child::after{display:none}nav>.nav-group>.title[data-v-61a2a2b1]{font-size:.75em;font-weight:bold;padding:.4em .67em 1em}nav>.nav-group ul[data-v-61a2a2b1]{margin:0;padding:0;list-style:none}nav>.actions[data-v-61a2a2b1]{color:#333;display:flex;justify-content:flex-end;align-items:center}nav>.actions[data-v-61a2a2b1]>*{margin:0 .5em;cursor:pointer}nav>.actions .pin-toggle[data-v-61a2a2b1]{transition:transform .1s ease;transform:rotate(37deg)}nav>.actions .pin-toggle[data-v-61a2a2b1]:hover{transform:unset}nav>.actions .pin-toggle.active[data-v-61a2a2b1]{transform:unset}nav>.actions .pin-toggle.active[data-v-61a2a2b1]:hover{transform:rotate(37deg)}
+.user-nav[data-v-7f5e071b]{position:relative;line-height:1}.user-nav[data-v-7f5e071b]>*{margin:0 .5em;vertical-align:middle}.user-nav>a[data-v-7f5e071b]{color:inherit}.user-nav .avatar[data-v-7f5e071b]{margin:0 1em;width:35px;height:35px;border-radius:50%;cursor:pointer}.user-nav .text[data-v-7f5e071b]{margin:0 .2em;text-decoration:none;font-size:.8em;color:inherit}
+.dropdown[data-v-9d62b45a]{--duration: var(--dropdown-transition-duration, 0.15s);--transitions: opacity var(--duration) ease-out, top var(--duration) ease-out;position:absolute;box-sizing:border-box;opacity:0;transition:z-index 0s var(--duration),var(--transitions);pointer-events:none;z-index:-2147483648}.dropdown.shown[data-v-9d62b45a]{transition:var(--transitions);pointer-events:unset;z-index:var(--dropdown-z-index, 9)}
+.float-card[data-v-6da7f3f0]{width:390px;box-shadow:0 0 6px 4px rgba(26,26,26,.1) !important;font-size:1rem;line-height:1.1}.user-header-top[data-v-6da7f3f0]{position:relative;height:100px;background-size:cover;background-position:center}.avatar[data-v-6da7f3f0]{width:60px;height:60px;border-radius:50%;position:absolute;top:70px;left:12px}.user-info[data-v-6da7f3f0]{padding:.25em .625em .625em 80px}.user-info[data-v-6da7f3f0]>*{margin:.6em 0}.user-stat-data[data-v-6da7f3f0] .field .key{color:var(--lfe-color--grey-4)}.dropdown-operations[data-v-6da7f3f0]{margin-top:10px;width:5rem;color:#333;background:#fff;border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,.15),inset 0 0 1px rgba(0,0,0,.5);user-select:none}.dropdown-operations>ul[data-v-6da7f3f0]{padding:0;margin:0;max-height:10em;list-style:none;outline:none;font-size:.875rem}.dropdown-operations>ul li[data-v-6da7f3f0]{display:block;padding:.3em 0;cursor:pointer;text-align:center}.dropdown-operations>ul li[data-v-6da7f3f0]:hover{background:#eee}
+.luogu-username[data-v-3becc055]{display:inline-flex;align-items:center}.luogu-username[data-v-3becc055]>*{vertical-align:baseline}.luogu-username[data-v-3becc055]>*:not(:first-child){margin-left:2px}.luogu-username[data-v-3becc055]>*:not(:last-child){margin-right:2px}.luogu-username .name[data-v-3becc055]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.luogu-username>img[data-v-3becc055]{width:1.75em;height:1.75em;border-radius:50%;margin-right:.3em !important}
+.user-nav[data-v-5ed955c6]{background:#fff;padding:1.25em .75em}.user-nav>.nav-group[data-v-5ed955c6]{margin:.25em 0}.user-nav>.nav-group[data-v-5ed955c6]::after{content:"";display:block;margin:1em 0;border-bottom:1px solid var(--lfe-color--grey-2)}.user-nav>.nav-group[data-v-5ed955c6]:last-child::after{display:none}.user-nav>.nav-group>.title[data-v-5ed955c6]{font-size:.75em;font-weight:bold;padding:.4em .67em 1em}.user-nav>.nav-group ul[data-v-5ed955c6]{margin:0;padding:0;list-style:none}.user-nav>.title[data-v-5ed955c6]{margin-bottom:.75em;width:100%;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center}.user-nav>.title>.username[data-v-5ed955c6]{width:0;min-width:0;flex:1}.user-nav>.title>.close[data-v-5ed955c6]{margin:0 .5em;cursor:pointer}.user-nav .login-actions[data-v-5ed955c6]{width:100%;text-align:center}.user-nav a.action[data-v-5ed955c6]{color:inherit;margin:0 .75em}.user-nav a.action[data-v-5ed955c6]:hover{filter:opacity(0.6)}.user-nav a.action>.faicon-inline[data-v-5ed955c6]{margin-right:.5em}
+html,body{box-sizing:border-box;width:100%}#app{box-sizing:border-box;width:100%}
+.main-container[data-v-2360723b]{display:flex;flex-flow:column nowrap;box-sizing:content-box;padding:0;margin-top:4rem;width:100%;--usable-width: 100vw;--left-side-offset: 0;min-height:calc(100vh - 4rem);--usable-height: calc(100vh - 4rem);--top-side-offset: 4rem}.main-container.lside-pin[data-v-2360723b]{--left-side-offset: 180px;--usable-width: calc(100vw - 180px);width:calc(100% - 180px);margin-left:180px}.main-container[data-v-2360723b] *{scroll-margin-top:4rem}.lside[data-v-2360723b]{position:fixed;top:4rem;left:0;bottom:0;z-index:11;box-sizing:border-box;max-width:240px;width:240px;line-height:1.2;overflow:hidden auto;transition:left .3s ease,box-shadow .5s ease}.lside.show[data-v-2360723b]{border-radius:0 .75em .75em 0;box-shadow:0 0 1px 0 rgba(0,0,0,.5) inset,2px 0 5px 2px rgba(0,0,0,.15)}.lside.hide[data-v-2360723b]{left:-240px}.lside.pin[data-v-2360723b]{width:180px;box-shadow:1px 0 3px rgba(26,26,26,.1);z-index:9}.rside[data-v-2360723b]{position:fixed;top:4rem;right:0;bottom:0;box-sizing:border-box;max-width:240px;width:240px;line-height:1.2;z-index:11;overflow:hidden auto;transition:right .3s ease,box-shadow .5s ease}.rside.show[data-v-2360723b]{border-radius:.75em 0 0 .75em;box-shadow:0 0 1px 0 rgba(0,0,0,.5) inset,2px 0 5px 2px rgba(0,0,0,.15)}.rside.hide[data-v-2360723b]{right:-240px}.top-bar[data-v-2360723b]{position:fixed;top:0;left:0;right:0;bottom:0;box-sizing:border-box;max-height:4rem;height:4rem;z-index:10;display:flex;flex-flow:row nowrap;align-items:center;padding:0 1rem;line-height:1;color:#333;background:#fff;box-shadow:0 1px 3px rgba(26,26,26,.1)}.top-bar .left[data-v-2360723b]{display:flex;align-items:center;flex:1}.top-bar .left[data-v-2360723b]>*{padding:0 1rem}.top-bar .header-logo[data-v-2360723b]{height:2rem;vertical-align:middle;user-select:none}.top-bar .side-toggle[data-v-2360723b]{cursor:pointer;padding:1rem;border-radius:.5rem}.top-bar .side-toggle[data-v-2360723b]:hover,.top-bar .side-toggle.active[data-v-2360723b]{background-color:rgba(0,0,0,.05)}
