@@ -14,13 +14,13 @@ lt qp(lt a, lt n, lt p){//快速幂
 }
 
 void cfac(){//求取模意义下的阶乘
-    fac[0] = 1 % p ,fac[1] = 1 % p;
+    fac[0] = 1 % p, fac[1] = 1 % p;
     for(int i = 2; i <= p; i++)
         fac[i] = fac[i-1] * i % p;
 }
 
 void cifac(){//求取模意义下的逆元
-    ifac[p - 1] = qp(fac[p - 1], p - 2, p);
+    ifac[p-1] = qp(fac[p-1], p - 2, p);
     for(int i = p - 2; i >= 0; i--)
         ifac[i] = 1ll * ifac[i+1] * (i+1) % p;
 }
