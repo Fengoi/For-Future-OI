@@ -1,3 +1,5 @@
+// 区间加、区间求和
+
 #include<bits/stdc++.h>
 using namespace std;
 
