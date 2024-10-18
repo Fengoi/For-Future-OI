@@ -25,7 +25,7 @@ int main(){
 			maxx[i][k] = max(maxx[i][k-1], maxx[i+(1<<(k-1))][k-1]);
 		}
 	}
-	for(int len = 1; len <= n; len++){// O(n log n) 预处理 p
+	for(int len = 1; len <= n; len++){// O(n log n) 预处理 p：__log
 		for(int k = 20; k >= 0; k--){
 			if(len & (1<<k)){
 				p[len] = k;
